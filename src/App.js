@@ -2,10 +2,20 @@ import React, { useRef, useState } from "react";
 import "./App.scss";
 import Team from "./components/Team/Team";
 import MembersSlider from "./components/MembersSlider/MembersSlider";
+import { useEventListener } from "./hooks/useEventListener";
 
 const App = () => {
   const sliderRef = useRef(null);
   const [sliderVisible, setSliderVisibility] = useState(false);
+
+  const keyDownHandler = (event) => {
+    // 27 is escpace
+    if (event.keyCode === 27) {
+      closeSlider();
+    }
+  };
+
+  useEventListener("keydown", keyDownHandler);
 
   const openSlider = (slideIndex) => {
     setSliderVisibility(true);

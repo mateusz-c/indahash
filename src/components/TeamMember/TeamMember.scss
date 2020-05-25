@@ -1,17 +1,31 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+$image-size: 180px;
+
 .team-member {
-  margin: 0 41px 75px;
+  margin: 0 15px 25px;
   position: relative;
   text-align: center;
   width: 180px;
 
+  @include respond-to("sm") {
+    margin: 0 41px 75px;
+  }
+
   &__image-wrapper {
     border-radius: 50%;
     cursor: pointer;
-    height: 180px;
-    margin-bottom: 26px;
+    height: #{$image-size/2};
+    margin: 0 auto 26px;
     overflow: hidden;
     position: relative;
-    width: 180px;
+    width: #{$image-size/2};
+
+    @include respond-to("sm") {
+      height: $image-size;
+      width: $image-size;
+    }
 
     &:hover {
       &::after {
@@ -20,7 +34,7 @@
     }
 
     &::after {
-      background-color: #48c3dc;
+      background-color: $color-primary;
       content: "";
       height: 100%;
       left: 0;
@@ -38,17 +52,24 @@
 
   &__mail {
     align-items: center;
-    background-color: #452e76;
+    background-color: $color-secondary;
     border-radius: 50%;
     display: flex;
-    height: 40px;
+    height: 30px;
     justify-content: center;
     position: absolute;
-    right: 0;
+    right: 45px;
     top: 0;
     transition: background-color 0.3s;
-    width: 40px;
+    width: 30px;
     z-index: 1;
+
+    @include respond-to("sm") {
+      height: 40px;
+      right: 0;
+      top: 0;
+      width: 40px;
+    }
 
     &:hover {
       background-color: #614d8a;
@@ -57,20 +78,25 @@
     &-content {
       background: url("../../img/mail.svg") no-repeat center;
       background-size: contain;
-      height: 17px;
-      width: 17px;
+      height: 12px;
+      width: 12px;
+
+      @include respond-to("sm") {
+        height: 17px;
+        width: 17px;
+      }
     }
   }
 
   &__name {
-    color: #452e76;
+    color: $color-secondary;
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 10px;
   }
 
   &__position {
-    color: #48c3dc;
+    color: $color-primary;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.71;

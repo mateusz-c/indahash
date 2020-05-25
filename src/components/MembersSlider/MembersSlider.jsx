@@ -23,11 +23,11 @@ const MembersSlider = React.forwardRef(({ visible, closeSlider }, ref) => {
         />
 
         <Slider ref={ref} {...settings} >
-          {teamMembers.map((member) => (
-            <div className="slider__item">
+          {teamMembers.map(({id, position, name}) => (
+            <div className="slider__item" key={id}>
               <div className="slider__box">
-                <div className="slider__position">{member.position}</div>
-                <div className="slider__name">{member.name}</div>
+                <div className="slider__position">{position}</div>
+                <div className="slider__name">{name}</div>
               </div>
             </div>
           ))}

@@ -1,14 +1,27 @@
+@import './styles/variables';
+@import './styles/mixins';
+
 .app {
-  padding-top: 66px;
+  padding-top: 30px;
   position: relative;
+  width: 100%;
   z-index: 1;
 
+  @include respond-to('sm') {
+    padding-top: 66px;
+  }
+
   &__header {
-    color: #452e76;
-    font-size: 60px;
+    color: $color-secondary;
+    font-size: 30px;
     font-weight: 600;
     line-height: 1.08;
-    margin-bottom: 117px;
+    margin-bottom: 30px;
     text-align: center;
+
+    @include respond-to('sm') {
+      font-size: 60px;
+      margin-bottom: 117px;
+    }
   }
 }

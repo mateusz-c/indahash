@@ -1,5 +1,6 @@
 export const teamMembers = [
   {
+    id: "1",
     name: "Basia Sołtysińska",
     position: "Founder",
     city: "Warsaw",
@@ -7,6 +8,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "2",
     name: "Włas Chorowiec",
     position: "Founder",
     city: "Warsaw",
@@ -14,6 +16,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "3",
     name: "Edyta Leśniewska",
     position: "Head of Human Resources",
     city: "Warsaw",
@@ -21,6 +24,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "4",
     name: "Joanna Pawluk",
     position: "Chief Growth Officer (CGO)",
     city: "London",
@@ -28,6 +32,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "5",
     name: "David Saunders",
     position: "Business Development",
     city: "London",
@@ -35,6 +40,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "6",
     name: "Adam Eldridge",
     position: "Business Development Director US",
     city: "Los Angeles",
@@ -42,6 +48,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "7",
     name: "Maha Mahda",
     position: "Chief Business Development Officer (CBDO)",
     city: "Warsaw",
@@ -49,6 +56,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "8",
     name: "Elżbieta Kamińska",
     position: "International Client Service Manager",
     city: "Warsaw",
@@ -56,6 +64,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "9",
     name: "Karolina Makuch",
     position: "Creation Manager",
     city: "Warsaw",
@@ -63,6 +72,7 @@ export const teamMembers = [
     image: "https://source.unsplash.com/random/180x180",
   },
   {
+    id: "10",
     name: "Kamil Bolek",
     position: "Head of Communication",
     city: "Warsaw",
