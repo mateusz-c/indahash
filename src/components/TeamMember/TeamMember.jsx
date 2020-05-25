@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeamMember.scss';
 
-const TeamMember = ({ name, position, city, email }) => {
+const TeamMember = ({ name, position, city, email, image }) => {
 
   return (
     <div className="team-member">
@@ -10,7 +10,7 @@ const TeamMember = ({ name, position, city, email }) => {
       </a>
       <div className="team-member__image-wrapper">
         <img
-          src="https://source.unsplash.com/random/180x180"
+          src={image}
           className="team-member__img"
           alt={name}
         />
